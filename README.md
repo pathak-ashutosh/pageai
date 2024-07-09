@@ -1,10 +1,10 @@
-# PAGE-AI
+# PageAI
 
-PAGE-AI is an AI-powered web design analysis tool that uses Google's Vertex AI to detect and analyze components in web page designs.
+PageAI is an AI-powered web design analysis tool that uses Google's Vertex AI to detect and analyze components in web page designs.
 
 ## Project Overview
 
-PAGE-AI takes an image of a web page design as input and uses the Gemini model from Vertex AI to identify various components such as buttons, input fields, links, images, and text blocks. It then generates a processed image with bounding boxes around these components and provides detailed information about each detected element.
+PageAI takes an image of a web page design as input and uses the Gemini model from Vertex AI to identify various components such as buttons, input fields, links, images, and text blocks. It then generates a processed image with bounding boxes around these components and provides detailed information about each detected element.
 
 ## Features
 
@@ -13,7 +13,7 @@ PAGE-AI takes an image of a web page design as input and uses the Gemini model f
 - Visual output with bounding boxes
 - Detailed component information including type, description, and location
 
-For a overview and future roadmap, please refer to the [project scope](https://github.com/pathak-ashutosh/pageai/SCOPE.md).
+For a overview and future roadmap, please refer to the [project scope](https://github.com/pathak-ashutosh/pageai/blob/main/SCOPE.md).
 
 ## Prerequisites
 
@@ -27,8 +27,8 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/PAGE-AI.git
-   cd PAGE-AI
+   git clone https://github.com/your-username/pageai.git
+   cd pageai
    ```
 
 2. Create a virtual environment and activate it:
@@ -77,7 +77,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## Contributing
 
-Contributions to PAGE-AI are welcome. Please follow these steps:
+Contributions to PageAI are welcome. Please follow these steps:
 
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature/amazing-feature`)
@@ -92,7 +92,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - ashutoshpathak[[[at]]]thenumbercrunchdotcom
+Ashutosh Pathak - ashutoshpathak[[[at]]]thenumbercrunchdotcom
 
 Project Link: [https://github.com/pathak-ashutosh/PageAI](https://github.com/pathak-ashutosh/pageai)
 
