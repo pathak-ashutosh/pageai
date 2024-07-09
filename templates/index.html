@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy PageAI with Vertex AI</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        #result-image { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <h1>Toy PageAI</h1>
+    <input type="file" id="file-input" accept="image/*">
+    <button onclick="uploadAndProcess()">Upload and Process</button>
+    <div id="results">
+        <img id="result-image" style="display: none;">
+    </div>
+
+    <script>
+    function uploadAndProcess() {
+        var fileInput = document.getElementById('file-input');
+        var file = fileInput.files[0];
+        var formData = new FormData();
+        formData.append('file', file);
+
+        $.ajax({
+            url: '/upload',
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function(response) {
+                $.ajax({
+                    url: '/process',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({filename: response.filename}),
+                    success: function(processResponse) {
+                        $('#result-image').attr('src', '/image/' + processResponse.processed_image).show();
+                    }
+                });
+            }
+        });
+    }
+    </script>
+</body>
+</html>
