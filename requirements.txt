@@ -2,3 +2,4 @@ Flask==3.0.3
 Pillow==10.3.0
 vertex-ai==1.49.0
 python-dotenv==1.0.1
+gunicorn=22.0.0
